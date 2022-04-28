@@ -50,7 +50,7 @@ const domain = 'https://shorturlshort.herokuapp.com/';
         <div className="result">
           <p>{domain + shortenLink}</p>
           <CopyToClipboard
-            text={shortenLink}
+            text={domain + shortenLink}
             onCopy={() => setCopied(true)}
           >
             <button className={copied ? "copiado" : ""}>Copiar link!</button>
