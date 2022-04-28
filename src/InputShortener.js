@@ -4,6 +4,7 @@ const InputShortener = ({ setInputValue }) => {
   const [value, setValue] = useState("");
 
   const handleClick = () => {
+    
     setInputValue(value);
     setValue("");
   }

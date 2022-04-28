@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
 import CopyToClipboard from "react-copy-to-clipboard";
+const validUrl = require('valid-url');
 
 const LinkResult = ({ inputValue }) => {
   const [shortenLink, setShortenLink] = useState("");
