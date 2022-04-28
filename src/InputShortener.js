@@ -10,11 +10,11 @@ const InputShortener = ({ setInputValue }) => {
 
   return (
     <div className="inputContainer">
-      <h1>URL <span>Shortener</span></h1>
+      <h1>Encurtador <span>de links</span></h1>
       <div>
         <input
           type="text"
-          placeholder="Paste a link to shorten it"
+          placeholder="Cole o link a ser encurtado!"
           value={value}
           onChange={e => setValue(e.target.value)}  
         />

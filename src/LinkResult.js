@@ -37,12 +37,12 @@ const LinkResult = ({ inputValue }) => {
   }, [copied]);
 
   if(loading) {
-    return <p className="noData">Loading...</p>
+    return <p className="noData">Encurtando...</p>
   }
   if(error) {
-    return <p className="noData">Something wne t wrong :(</p>
+    return <p className="noData">Ops! Algo deu errado :(</p>
   }
-const domain = process.env.DOMAIN;
+const domain = 'https://shorturlshort.herokuapp.com/';
 
   return (
     <>
@@ -53,7 +53,7 @@ const domain = process.env.DOMAIN;
             text={shortenLink}
             onCopy={() => setCopied(true)}
           >
-            <button className={copied ? "copied" : ""}>Copy to Clipboard</button>
+            <button className={copied ? "copiado" : ""}>Copiar link!</button>
           </CopyToClipboard>
         </div>
       )}
